@@ -26,6 +26,9 @@ def prime_factors(number):
 
 
 def valid_factors(factors):
+    """
+    Проверяем, является ли набор делителей подходящим
+    """
     # Если простых множителей не 8 или минимальный повторяется хотя бы дважды
     if len(factors) != 8 or factors[0] == factors[1]:
         return False
