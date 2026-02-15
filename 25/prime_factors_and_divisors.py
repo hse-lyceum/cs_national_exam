@@ -15,7 +15,7 @@ def prime_factors(number):
 
 def divisors(n):
     """
-    Поиск всех делителей
+    Поиск всех делителей кроме единицы и самого себя
     """
     _divisors = []
     for i in range(2, int(n ** 0.5) + 1):
