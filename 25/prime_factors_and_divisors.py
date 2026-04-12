@@ -22,6 +22,6 @@ def divisors(n):
         if n % i == 0:
             _divisors.append(i)
             _divisors.append(n // i)
-    if int(n ** 0.5) ** 2 == n:
+    if int(n ** 0.5) ** 2 == n and n > 1:
         _divisors.pop()
     return _divisors
