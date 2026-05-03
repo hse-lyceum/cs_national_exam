@@ -15,13 +15,13 @@ def prime_factors(number):
 
 def divisors(n):
     """
-    Поиск всех делителей
+    Поиск всех делителей кроме единицы и самого себя
     """
     _divisors = []
     for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             _divisors.append(i)
             _divisors.append(n // i)
-    if int(n ** 0.5) ** 2 == n:
+    if int(n ** 0.5) ** 2 == n and n > 1:
         _divisors.pop()
     return _divisors
